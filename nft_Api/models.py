@@ -9,7 +9,7 @@ class NFT(models.Model):
     price = models.IntegerField()
     description = models.TextField()
     offer = models.BooleanField(default=False)
-    properties = ArrayField(models.CharField(max_length=50), blank=True)
+    properties = models.TextField()
 
 
 class User(models.Model):
