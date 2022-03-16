@@ -8,7 +8,8 @@ class NFTSerializer(serializers.ModelSerializer):
     class Meta:
         model = NFT  # tell django which model to use
         # tell django which fields to include
-        fields = ('id', 'image', 'name', 'price', 'description', 'properties',)
+        fields = ('id', 'image', 'name', 'offer',
+                  'price', 'description', 'properties',)
 
 
 class UserSerializer(serializers.ModelSerializer):
