@@ -4,7 +4,7 @@ from django.contrib.postgres.fields import ArrayField
 
 
 class NFT(models.Model):
-    image = models.TextField()
+    image = models.TextField(default="none")
     name = models.CharField(max_length=32)
     price = models.IntegerField()
     description = models.TextField()
@@ -13,7 +13,7 @@ class NFT(models.Model):
 
 
 class Users(models.Model):
-    image = models.TextField()
+    image = models.TextField(default="none")
     fname = models.CharField(max_length=32)
     lname = models.CharField(max_length=32)
     password = models.CharField(max_length=50)
