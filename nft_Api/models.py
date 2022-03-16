@@ -12,7 +12,7 @@ class NFT(models.Model):
     offer = models.BooleanField(default=False)
 
 
-class Users(models.Model):
+class User(models.Model):
     image = models.TextField(default="none")
     fname = models.CharField(max_length=32)
     lname = models.CharField(max_length=32)

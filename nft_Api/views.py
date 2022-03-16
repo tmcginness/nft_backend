@@ -5,7 +5,7 @@ from rest_framework import generics
 from .serializers import NFTSerializer
 from .serializers import UserSerializer
 from .models import NFT
-from .models import Users
+from .models import User
 
 
 class NFTList(generics.ListCreateAPIView):
@@ -19,12 +19,12 @@ class NFTDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = NFTSerializer
 
 
-class UsersList(generics.ListCreateAPIView):
+class UserList(generics.ListCreateAPIView):
     # tell django how to retrieve all objects from the DB, order by id ascending
-    queryset = Users.objects.all().order_by('id')
+    queryset = User.objects.all().order_by('id')
     serializer_class = UserSerializer  # tell django what serializer to use
 
 
-class UsersDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Users.objects.all().order_by('id')
+class UserDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = User.objects.all().order_by('id')
     serializer_class = UserSerializer

@@ -1,4 +1,4 @@
-from .models import Users
+from .models import User
 from django.contrib import admin
 from .models import NFT
 
@@ -6,4 +6,4 @@ from .models import NFT
 
 admin.site.register(NFT)
 
-admin.site.register(Users)
+admin.site.register(User)
