@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-p%%4o))a6xo05^s@^+a#f5=yj=-h*9=6l32o_4d-sk*u$e##!w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', 'boiling-island-41564.herokuapp.com']
 
