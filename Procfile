@@ -1,1 +1,1 @@
-web: gunicorn nft_api.wsgi
+web: gunicorn nft_backend.wsgi
