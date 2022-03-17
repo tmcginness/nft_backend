@@ -10,11 +10,7 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AddField(
-            model_name='nft',
-            name='blockchain',
-            field=models.CharField(default='Ethereum', max_length=16),
-        ),
+
         migrations.AddField(
             model_name='nft',
             name='collection',
