@@ -17,4 +17,4 @@ class UserSerializer(serializers.ModelSerializer):
         model = User  # tell django which model to use
         # tell django which fields to include
         fields = ('id', 'image', 'fname', 'lname', 'password',
-                  'collection', 'created', 'favorited', 'offers', 'properties',)
+                  'collection', 'created', 'favorited', 'offers', 'bio',)

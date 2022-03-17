@@ -29,4 +29,4 @@ class User(models.Model):
         max_length=200, blank=True, null=True)
     offers = models.CharField(
         max_length=200, blank=True, null=True)
-    properties = models.TextField(blank=True, null=True)
+    bio = models.TextField(blank=True, null=True)
