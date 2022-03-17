@@ -9,7 +9,11 @@ class NFT(models.Model):
     price = models.IntegerField()
     description = models.TextField()
     offer = models.BooleanField(default=False)
-    properties = ArrayField(models.CharField(max_length=50), blank=True)
+    offer_price = models.IntegerField(default=0)
+    owner = models.CharField(max_length=64, default="None")
+    blockchain = models.CharField(max_length=16, default="Ethereum")
+    collection = models.CharField(max_length=32, blank=True, null=True)
+    properties = models.TextField(blank=True, null=True)
 
 
 class User(models.Model):
@@ -17,6 +21,8 @@ class User(models.Model):
     fname = models.CharField(max_length=32)
     lname = models.CharField(max_length=32)
     password = models.CharField(max_length=50)
-    collection = ArrayField(models.CharField(max_length=200), blank=True)
-    offers = ArrayField(models.CharField(max_length=200), blank=True)
-    properties = models.TextField()
+    collection = models.CharField(
+        max_length=200, blank=True, null=True)
+    offers = models.CharField(
+        max_length=200, blank=True, null=True)
+    properties = models.TextField(blank=True, null=True)
