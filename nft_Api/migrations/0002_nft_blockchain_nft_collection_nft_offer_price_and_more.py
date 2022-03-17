@@ -12,19 +12,5 @@ class Migration(migrations.Migration):
     operations = [
 
 
-        migrations.AddField(
-            model_name='nft',
-            name='offer_price',
-            field=models.IntegerField(default=0),
-        ),
-        migrations.AddField(
-            model_name='nft',
-            name='owner',
-            field=models.CharField(default='None', max_length=64),
-        ),
-        migrations.AlterField(
-            model_name='nft',
-            name='properties',
-            field=models.TextField(blank=True, null=True),
-        ),
+
     ]
