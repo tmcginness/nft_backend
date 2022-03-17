@@ -11,11 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
 
-        migrations.AddField(
-            model_name='nft',
-            name='collection',
-            field=models.CharField(blank=True, max_length=32, null=True),
-        ),
+
         migrations.AddField(
             model_name='nft',
             name='offer_price',
